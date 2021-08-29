@@ -18,7 +18,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    animation-name: fade;
+    animation-duration: 0.5s;
 }
 
 .courosel2{
@@ -27,6 +28,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: fade;
+    animation-duration: 0.5s;
 }
 
 .courosel3{
@@ -35,6 +38,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: fade;
+    animation-duration: 0.3s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+
+    }
 }
 
 .heroTexts{
@@ -92,8 +110,9 @@
 }
 
 .linkAndImage:hover{
-    transform: scale(1.09);
+    transform: scale(1.02);
     transition: 0.2s ease;
+
 }
 
 .linkAndImage a {

@@ -18,7 +18,12 @@ export class navbar extends Component {
                 </div>
 
                 <div className="middleNav">
-                    <Link to ="/">Home</Link>
+                     <div class="input-group mb-3 cn">
+                        <input type="text" class="form-control cni" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary cnb" type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="bottomNav">
@@ -26,6 +31,7 @@ export class navbar extends Component {
 
                     </div>
                     <div>
+                        <Link to="/">Home</Link>
                         <Link to="/admission">Admission</Link>
                         <Link className="faculties">
                             Faculties and Departments

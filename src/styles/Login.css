@@ -8,5 +8,10 @@
     width: 50%;
     margin: auto;
     padding: 100px 0; 
+    display: grid;
     
+}
+
+.cS{
+    padding: 0;
 }

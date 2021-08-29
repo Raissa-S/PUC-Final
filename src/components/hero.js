@@ -20,6 +20,7 @@ export class hero extends Component {
            
            let heroCont = document.querySelector('#hero')
            
+
            if(heroCont !== null)
              heroCont.className = this.state.courosel[this.state.counter]
            this.setState({counter: this.state.counter + 1})
@@ -32,14 +33,14 @@ export class hero extends Component {
 
     render() {
         return (
-            <div id='hero' className='heroContainer' >
+            <div style={{animationName: 'fade', animationDuration: '0.3s'}} id='hero' className='heroContainer' >
                 <div className='heroTexts'>
                 <div className='description'>
                     
                 </div>
                     <div className="heroLinks">
                         <Link>E-Learning</Link>
-                        <Link>E-Portal</Link>
+                        <Link to="/courseRegistration">E-Portal</Link>
                         <Link>Resources</Link>
                     </div>
                 </div>
